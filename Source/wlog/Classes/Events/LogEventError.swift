@@ -6,7 +6,7 @@
 import Foundation
 
 @objc public class LogEventError: LogEventWrap {
-    private(set) var error: Error
+    public private(set) var error: Error
 
     @objc public init(level: LogLevel = .error,
                       error: Error,

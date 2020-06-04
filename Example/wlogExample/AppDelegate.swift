@@ -9,9 +9,12 @@
 import UIKit
 import wlog
 
+enum TestError: String, Error {
+    case fail = "TestError.fail"
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -22,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                       category: "123")
         )
         log.debug("Starting app")
+        log.error(TestError.fail)
 
         return true
     }

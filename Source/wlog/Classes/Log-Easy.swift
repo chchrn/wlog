@@ -40,3 +40,9 @@ extension Log {
         self.log(level: .info, key: key, parameters: parameters)
     }
 }
+
+extension Log {
+    public func error(_ error: Error) {
+        self.log(LogEventError(error: error))
+    }
+}

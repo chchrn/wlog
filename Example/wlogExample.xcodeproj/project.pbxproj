@@ -58,6 +58,7 @@
 		B29E5B7C24890427005D1D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B29E5B7E24890427005D1D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B29E5BA82489063E005D1D60 /* wlog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wlog.xcodeproj; path = ../wlog.xcodeproj; sourceTree = "<group>"; };
+		EB3869CD66D9AEF061B1803E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 				B29E5B6F24890424005D1D60 /* wlogExample */,
 				B29E5B6E24890424005D1D60 /* Products */,
 				B29E5BB124890667005D1D60 /* Frameworks */,
+				EB3869CD66D9AEF061B1803E /* README.md */,
 			);
 			sourceTree = "<group>";
 		};

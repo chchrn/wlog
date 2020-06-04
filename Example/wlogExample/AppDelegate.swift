@@ -16,10 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        let log = SyncLog(OsLog(subsystem: "123", category: "123"))
+
+        let log = SyncLog(
+                OsLog(subsystem: "123",
+                      category: "123")
+        )
         log.debug("Starting app")
-        
+
         return true
     }
 

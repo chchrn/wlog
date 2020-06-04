@@ -6,6 +6,7 @@
 import Foundation
 
 @objc public class LogEventError: LogEventWrap {
+    private(set) var error: Error
 
     @objc public init(level: LogLevel = .error,
                       error: Error,
@@ -16,6 +17,7 @@ import Foundation
             params = nsError.userInfo
         }
 
+        self.error = error
         super.init(
                 LogEventWithParams(level: level,
                                    key: error.localizedDescription,

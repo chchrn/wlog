@@ -29,7 +29,7 @@ import Foundation
 
     public var message: String {
         let paramsStr = String(format: "%@", self.parameters)
-        let message = self.parameters.count > 0 ? "\(self.key) \(paramsStr)" : self.key
+        let message = self.parameters.count > 0 ? (self.key + " " + paramsStr) : self.key
         return message
     }
 

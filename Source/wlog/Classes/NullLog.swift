@@ -6,6 +6,9 @@
 import Foundation
 
 public class NullLog: Log {
+
+    public init() {}
+
     public func log(_ event: LogEvent) {
         // do nothing
     }

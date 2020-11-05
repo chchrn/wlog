@@ -16,6 +16,8 @@ import Foundation
         if let nsError = error as? NSError {
             params = nsError.userInfo
         }
+        params["file"] = file
+        params["line"] = String(format: "%li", line)
 
         self.error = error
         super.init(

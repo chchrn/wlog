@@ -9,3 +9,5 @@ let log = SyncLog(
         
 log.debug("Starting app")
 ```
+
+[Read more] (http://chchrn.com/2020/03/08/logs.html)

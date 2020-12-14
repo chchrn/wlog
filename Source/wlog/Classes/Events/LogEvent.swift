@@ -28,8 +28,11 @@ import Foundation
     public let parameters: Parameters
 
     public var message: String {
-        let paramsStr = String(format: "%@", self.parameters)
-        let message = self.parameters.count > 0 ? "\(self.key) \(paramsStr)" : self.key
+        let pairs = self.parameters.map { key, value -> String in
+            return (key + " = " + String(describing: value))
+        }
+        let paramsStr = pairs.joined(separator: "\n")
+        let message = self.parameters.count > 0 ? (self.key + " {\n" + paramsStr + "\n}") : self.key
         return message
     }
 
